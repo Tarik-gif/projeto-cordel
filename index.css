@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+/*font titulo*/
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+/*font corpo*/
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+/*font rodapé*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lilita+One&display=swap');
+
+:root {
+    --fonttitulo: "Lilita One";
+    --fontcorpo: "Caveat";
+    --fontrodape: "Josefin Sans"
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+/*header*/
+header {
+   background-image: linear-gradient(180deg, black, rgb(36, 36, 36) );
+   color: white;
+   padding: 20px;
+   text-align: center;
+}
+
+header h1 {
+    font-size: 10vw;
+    font-family: var(--fonttitulo);
+    margin: 0px;
+    padding-top: 50px;
+
+}
+
+header p {
+    font-size: 18px;
+    font-family: var(--fontrodape);
+    margin: 20px 0px;
+}
+
+a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 19px;
+}
+
+a:hover {
+    text-decoration:underline;
+}
+
+/*main*/
+main {
+    font-family: var(--fontcorpo);
+    font-size: 5vw;
+    margin: 0px;
+    padding: 0px;
+    font-weight: 500;
+    background-color: white;
+}
+
+.estrofes {
+    padding: 30px;
+}
+
+#pt2, #pt4 {
+    background-attachment: fixed;
+}
+
+#pt2 {
+    background-image: url("imagem/beijaflor.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: rgb(46, 46, 46);
+    box-shadow: inset 3px 3px 10px rgba(0, 0, 0, 0.377);
+}
+
+#pt4 {
+    background-image: url("imagem/newyork.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    background-color: rgb(46, 46, 46);
+    box-shadow: inset 3px 3px 10px rgba(0, 0, 0, 0.377);
+}
+
+#pt2 p, #pt4 p {
+    color: white;
+    padding: 3%;
+    margin: 0px;
+    background-color: rgba(0, 0, 0, 0.459);
+    display: inline-block;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.534);
+}
+
+/*footer*/
+footer {
+    background-color: black;
+    margin: 0px;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+}
+
+footer a {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+footer p {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
